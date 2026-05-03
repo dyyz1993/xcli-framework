@@ -1,6 +1,9 @@
 import { join } from 'path';
 import { homedir } from 'os';
 import { PluginLoader } from './plugin-loader.js';
+import { SessionManager } from './session-manager.js';
+import { DaemonManager } from './daemon-manager.js';
+import { EngineBridge } from './engine-bridge.js';
 
 export interface CoreConfig {
   name: string;
@@ -15,6 +18,9 @@ export interface CoreConfig {
 export class Core {
   readonly config: CoreConfig;
   readonly loader: PluginLoader;
+  readonly sessionManager: SessionManager;
+  readonly daemonManager: DaemonManager;
+  readonly engineBridge: EngineBridge;
 
   readonly configDir: string;
   readonly sessionDir: string;
@@ -23,6 +29,9 @@ export class Core {
   constructor(config: CoreConfig) {
     this.config = config;
     this.loader = new PluginLoader(this);
+    this.sessionManager = new SessionManager();
+    this.daemonManager = new DaemonManager();
+    this.engineBridge = new EngineBridge();
 
     this.configDir = join(homedir(), config.configDirName);
     this.sessionDir = join(this.configDir, 'sessions');

@@ -106,3 +106,12 @@ export type {
 
 export { SelfEvolveEngine, createSelfEvolveEngine } from './self-evolve.js';
 export type { LearningRecord, CommandUsageStats } from './self-evolve.js';
+
+export { SessionManager } from './session-manager.js';
+export type { Session, SessionManagerAdapter } from './session-manager.js';
+
+export { DaemonManager } from './daemon-manager.js';
+export type { DaemonStatus, DaemonManagerAdapter } from './daemon-manager.js';
+
+export { EngineBridge } from './engine-bridge.js';
+export type { EngineAdapter } from './engine-bridge.js';
