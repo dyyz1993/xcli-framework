@@ -1,5 +1,5 @@
 {
-  "name": "@xcli/core",
+  "name": "@dyyz1993/xcli-core",
   "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",

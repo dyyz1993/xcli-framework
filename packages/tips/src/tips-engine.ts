@@ -1,5 +1,5 @@
 import { stringify } from 'yaml';
-import type { CommandResult } from '@xcli/core';
+import type { CommandResult } from '@dyyz1993/xcli-core';
 
 const API_TIPS: Record<string, string[]> = {
   'ctx.page': [

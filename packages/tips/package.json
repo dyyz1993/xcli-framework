@@ -1,5 +1,5 @@
 {
-  "name": "@xcli/tips",
+  "name": "@dyyz1993/xcli-tips",
   "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@xcli/core": "workspace:*",
+    "@dyyz1993/xcli-core": "workspace:*",
     "yaml": "^2.4.0"
   },
   "devDependencies": {
