@@ -89,3 +89,20 @@ export type { GuardConfig, GuardRule } from './agent-guard.js';
 
 export { validateExecution, formatValidationReport } from './validator.js';
 export type { ValidationResult, ToolCallRecord } from './validator.js';
+
+export {
+  calculateSimilarity,
+  findSimilarCommands,
+  suggestCommand,
+} from './similarity.js';
+export type { SimilarityResult } from './similarity.js';
+
+export { splitCommand, parseCommandChain } from './chain-parser.js';
+export type {
+  ChainOperator,
+  ParsedCommand,
+  ParsedPipeline,
+} from './chain-parser.js';
+
+export { SelfEvolveEngine, createSelfEvolveEngine } from './self-evolve.js';
+export type { LearningRecord, CommandUsageStats } from './self-evolve.js';

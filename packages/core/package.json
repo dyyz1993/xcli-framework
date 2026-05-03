@@ -1,6 +1,6 @@
 {
   "name": "@dyyz1993/xcli-core",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,9 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -18,13 +20,13 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "zod": "^3.24.0",
-    "jiti": "^2.4.0"
+    "jiti": "^2.6.1",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "tsup": "^8.0.0",
-    "typescript": "^5.0.0"
+    "@types/node": "^20.19.39",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   },
   "repository": {
     "type": "git",
