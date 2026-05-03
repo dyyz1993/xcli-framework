@@ -1,0 +1,35 @@
+{
+  "name": "ghcli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "ghcli": "dist/bin/ghcli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "npx tsx bin/ghcli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@xcli/core": "workspace:*",
+    "@xcli/tips": "workspace:*",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dyyz1993/xcli-framework",
+    "directory": "packages/ghcli"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

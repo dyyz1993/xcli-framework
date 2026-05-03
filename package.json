@@ -1,0 +1,29 @@
+{
+  "name": "xcli-framework",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Extensible CLI framework — @xcli/core + @xcli/tips",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r --stream run build",
+    "dev": "pnpm -r --parallel --stream run dev",
+    "lint": "pnpm -r --stream run lint",
+    "typecheck": "pnpm -r --stream run typecheck",
+    "validate": "pnpm run typecheck && pnpm run lint && pnpm run build",
+    "clean": "pnpm -r --stream exec rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dyyz1993/xcli-framework"
+  },
+  "author": "dyyz1993"
+}
